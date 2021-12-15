@@ -1,0 +1,6 @@
+*.eosproj
+*.code-workspace
+.vs/
+.vscode/
+build/
+

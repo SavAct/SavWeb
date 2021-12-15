@@ -1,0 +1,362 @@
+{
+    "____comment": "This file was generated with eosio-abigen. DO NOT EDIT ",
+    "version": "eosio::abi/1.1",
+    "types": [],
+    "structs": [
+        {
+            "name": "Ref",
+            "base": "",
+            "fields": [
+                {
+                    "name": "Block",
+                    "type": "uint64"
+                },
+                {
+                    "name": "TrxId",
+                    "type": "checksum256"
+                }
+            ]
+        },
+        {
+            "name": "changekey",
+            "base": "",
+            "fields": [
+                {
+                    "name": "scope",
+                    "type": "name"
+                },
+                {
+                    "name": "key",
+                    "type": "uint64"
+                },
+                {
+                    "name": "newkey",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "clearscope",
+            "base": "",
+            "fields": [
+                {
+                    "name": "scope",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "deleteentry",
+            "base": "",
+            "fields": [
+                {
+                    "name": "scope",
+                    "type": "name"
+                },
+                {
+                    "name": "key",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "minbegin",
+            "base": "",
+            "fields": [
+                {
+                    "name": "scope",
+                    "type": "name"
+                },
+                {
+                    "name": "key",
+                    "type": "uint64"
+                },
+                {
+                    "name": "fname",
+                    "type": "string"
+                },
+                {
+                    "name": "type",
+                    "type": "string"
+                },
+                {
+                    "name": "format",
+                    "type": "string"
+                },
+                {
+                    "name": "fsize",
+                    "type": "uint32"
+                },
+                {
+                    "name": "attri",
+                    "type": "string"
+                },
+                {
+                    "name": "originators",
+                    "type": "string"
+                },
+                {
+                    "name": "resalefee",
+                    "type": "uint16"
+                },
+                {
+                    "name": "hash",
+                    "type": "string"
+                },
+                {
+                    "name": "code",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "minend",
+            "base": "",
+            "fields": [
+                {
+                    "name": "scope",
+                    "type": "name"
+                },
+                {
+                    "name": "key",
+                    "type": "uint64"
+                },
+                {
+                    "name": "ref",
+                    "type": "Ref"
+                },
+                {
+                    "name": "fref",
+                    "type": "Ref"
+                },
+                {
+                    "name": "code",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "minnext",
+            "base": "",
+            "fields": [
+                {
+                    "name": "scope",
+                    "type": "name"
+                },
+                {
+                    "name": "key",
+                    "type": "uint64"
+                },
+                {
+                    "name": "ref",
+                    "type": "Ref"
+                },
+                {
+                    "name": "code",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "setref",
+            "base": "",
+            "fields": [
+                {
+                    "name": "scope",
+                    "type": "name"
+                },
+                {
+                    "name": "key",
+                    "type": "uint64"
+                },
+                {
+                    "name": "fname",
+                    "type": "string"
+                },
+                {
+                    "name": "refs",
+                    "type": "Ref[]"
+                },
+                {
+                    "name": "attri",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "static_index_table",
+            "base": "",
+            "fields": [
+                {
+                    "name": "key",
+                    "type": "uint64"
+                },
+                {
+                    "name": "fname",
+                    "type": "string"
+                },
+                {
+                    "name": "refs",
+                    "type": "Ref[]"
+                },
+                {
+                    "name": "attri",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "updateref",
+            "base": "",
+            "fields": [
+                {
+                    "name": "scope",
+                    "type": "name"
+                },
+                {
+                    "name": "key",
+                    "type": "uint64"
+                },
+                {
+                    "name": "refs",
+                    "type": "Ref[]"
+                }
+            ]
+        },
+        {
+            "name": "uploadbegin",
+            "base": "",
+            "fields": [
+                {
+                    "name": "scope",
+                    "type": "name"
+                },
+                {
+                    "name": "key",
+                    "type": "uint64"
+                },
+                {
+                    "name": "fname",
+                    "type": "string"
+                },
+                {
+                    "name": "type",
+                    "type": "string"
+                },
+                {
+                    "name": "format",
+                    "type": "string"
+                },
+                {
+                    "name": "fsize",
+                    "type": "uint32"
+                },
+                {
+                    "name": "attri",
+                    "type": "string"
+                },
+                {
+                    "name": "originators",
+                    "type": "string"
+                },
+                {
+                    "name": "resalefee",
+                    "type": "uint16"
+                },
+                {
+                    "name": "hash",
+                    "type": "string"
+                },
+                {
+                    "name": "code",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "uploadnext",
+            "base": "",
+            "fields": [
+                {
+                    "name": "scope",
+                    "type": "name"
+                },
+                {
+                    "name": "key",
+                    "type": "uint64"
+                },
+                {
+                    "name": "refs",
+                    "type": "Ref[]"
+                },
+                {
+                    "name": "code",
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "actions": [
+        {
+            "name": "changekey",
+            "type": "changekey",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "clearscope",
+            "type": "clearscope",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "deleteentry",
+            "type": "deleteentry",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "minbegin",
+            "type": "minbegin",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "minend",
+            "type": "minend",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "minnext",
+            "type": "minnext",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "setref",
+            "type": "setref",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "updateref",
+            "type": "updateref",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "uploadbegin",
+            "type": "uploadbegin",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "uploadnext",
+            "type": "uploadnext",
+            "ricardian_contract": ""
+        }
+    ],
+    "tables": [
+        {
+            "name": "index",
+            "type": "static_index_table",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        }
+    ],
+    "ricardian_clauses": [],
+    "variants": []
+}
