@@ -1,0 +1,21 @@
+.number-color {
+  color: white;
+  background-color: black;
+  border-radius: 10%;
+}
+
+.vue-text-color {
+  color: #64b586;
+}
+
+.quasar-text-color {
+  color: #5ea3ef;
+}
+
+.ts-text-color {
+  color: #3478c6;
+}
+
+.vite-text-color {
+  color: #ab40f6;
+}

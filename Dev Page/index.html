@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="https://savact.com/images/icon_x150.png"
+    />
+
+    <!--
+      WARNING! Make sure that you match all Quasar and Vue related
+      tags to the same version! (Below it's "@2.11.7")
+    -->
+
+    <!-- See https://quasar.dev/start/umd to add further icon libraies -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900|Material+Icons"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/quasar@2.11.7/dist/quasar.prod.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Small Single File</title>
+    <link href="src/style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <!-- example of injection point where you write your app template -->
+    <div id="q-app"></div>
+
+    <!-- Add the following at the end of your body tag -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@3/dist/vue.global.prod.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/quasar@2.11.7/dist/quasar.umd.prod.js"></script>
+
+    <script type="module" src="src/app.ts" defer></script>
+  </body>
+</html>
