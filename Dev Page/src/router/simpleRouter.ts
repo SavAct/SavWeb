@@ -82,7 +82,11 @@ export const router = {
   push: (to: RouteLocation | string) => {
     const n_to = normalizeRoute(to);
     if (n_to) {
-      record.push(n_to);
+      record.splice(
+        recordIndex.value + 1,
+        record.length - recordIndex.value - 1,
+        n_to
+      );
       recordIndex.value = record.length - 1;
     }
   },
