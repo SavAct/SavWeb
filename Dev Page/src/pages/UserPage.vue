@@ -109,7 +109,7 @@ export default Vue.defineComponent({
             type: "negative",
             message: "Connection fail",
             caption:
-              "Could net check the account, there seems to be an error with the connection",
+              "Could not check the account, there seems to be an error with the connection",
             position: "top",
           });
         }
