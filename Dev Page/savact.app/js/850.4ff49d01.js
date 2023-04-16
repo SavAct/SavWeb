@@ -1,0 +1,1 @@
+"use strict";(globalThis["webpackChunksavactapp"]=globalThis["webpackChunksavactapp"]||[]).push([[850],{54094:(a,e,t)=>{t.r(e),t.d(e,{default:()=>u});var n=t(59835);function p(a,e,t,p,s,c){return(0,n.wg)(),(0,n.iD)("div")}const s=(0,n.aZ)({name:"page-empty"});var c=t(11639);const r=(0,c.Z)(s,[["render",p]]),u=r}}]);

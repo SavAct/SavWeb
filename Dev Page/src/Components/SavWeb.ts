@@ -46,6 +46,7 @@ export interface BrowserAction {
 export interface GoTo {
   f: "go";
   to: string; // URL of a file on blockchain
+  target?: "_blank" | "_self";
 }
 
 export interface GetFile {
@@ -69,15 +70,19 @@ export interface SavActPayment {
       };
 }
 
-export interface Payment {
+export interface PayParams {
+  chain: string; // Chain id or chain short name
+  from?: string;
+  to: string;
+  pay: string; // Asset like "1.2300 EOS eosio.token"
+  memo?: string;
+  t?: string | number; // Absolut time stamp of the deadline in seconds
+  dt?: string | number; // Relative time until the deadline in seconds
+}
+
+export interface Payment extends PayParams {
   f: "pay";
   id: string;
-  chain: string; // Chain id or chain short name
-  from: string;
-  to: string;
-  pay: string; // Asset like "1.2300 EOS"
-  memo: string;
-  SavAct?: SavActPayment;
   idToken: string;
 }
 
@@ -117,8 +122,26 @@ export interface VerifiyId {
   recVersion?: number; // recommended version of the browser
 }
 
+export interface SetLocation {
+  f: "setLocation";
+  idToken: string;
+  fullPath?: string;
+  path?: string;
+  query?: Query;
+  hash?: string;
+}
+
+export type Query = { [k: string]: string | null | Array<string | null> };
+
 export interface PageAction {
-  SavWeb: VerifiyId | GoTo | Payment | Transaction | GetFile | EosioChainApi;
+  SavWeb:
+    | VerifiyId
+    | GoTo
+    | Payment
+    | Transaction
+    | GetFile
+    | EosioChainApi
+    | SetLocation;
 }
 
 interface PageAction_idNull {
