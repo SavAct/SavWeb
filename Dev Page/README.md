@@ -2,7 +2,7 @@
 
 In order to upload an immortal website or dApp it is more efficient to upload the whole application in one file and with a minimum number of bytes. This environment is a template which fulfils this requirement in an optimal way.
 
-It uses <span style="color: #3478c6;" class="chip">TypeScript</span> for type safety. <span style="color: #ab40f6;" class="chip">Vite</span> and <span style="color: #5ea3ef;" class="chip">Quasar</span> with <span style="color: #64b586;" class="chip">Vue 3</span> are used for a fast development process.
+It uses <span style="color: #3478c6;">TypeScript</span> for type safety. <span style="color: #ab40f6;">Vite</span> and <span style="color: #5ea3ef;">Quasar</span> with <span style="color: #64b586;">Vue 3</span> are used for a fast development process.
 The resulting file size is reduced by using the publicly hosted libraries of Quasar and Vue.
 
 # Setup

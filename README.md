@@ -6,15 +6,9 @@ A system to upload and display files on Antelope blockchains.
 
 # Development Environment
 
-To create beautiful indelible web pages quickly while keeping the file size on the blockchain small, copy the folder [Dev Page](./Dev%20Page). It provides a template that uses <span style="color: #5ea3ef;" class="chip">Quasar</span> +
-<span style="color: #64b586;" class="chip">Vue 3</span> + <span style="color: #3478c6;" class="chip">TypeScript</span> +
-<span style="color: #ab40f6;" class="chip">Vite</span> and shows the page in the SavAct browser while the development process.
-
-<style>
-.chip{
- padding: 0 5px 0 5px;
-}
-</style>
+To create beautiful indelible web pages quickly while keeping the file size on the blockchain small, copy the folder [Dev Page](./Dev%20Page). It provides a template that uses <span style="color: #5ea3ef; padding: 0 5px 0 5px;">Quasar</span> +
+<span style="color: #64b586; padding: 0 5px 0 5px;" class="Label--blue">Vue 3</span> + <span style="color: #3478c6; padding: 0 5px 0 5px;">TypeScript</span> +
+<span style="color: #ab40f6; padding: 0 5px 0 5px;">Vite</span> and shows the page in the SavAct browser while the development process.
 
 # Examples
 
