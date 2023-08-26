@@ -7,11 +7,7 @@ The resulting file size is reduced by using the publicly hosted libraries of Qua
 
 # Setup
 
-1. Clone this repository
-
-```bash
-git clone https://github.com/SavAct/SavWeb.git
-```
+1. Install [Node](https://nodejs.org).
 
 2. Use [Visual Studio Code](https://code.visualstudio.com/download) to open the file `SavWeb-Page.code-workspace`.
 
@@ -25,19 +21,25 @@ Install dependencies
 yarn install
 ```
 
-Developing mode for instant code change update
-
-```bash
-yarn dev
-```
-
-Transpile the code to a single html file
+Transpile the code to a single html file: `dist/index.html`
 
 ```bash
 yarn build
 ```
 
+Developing mode for instant code change update **without** SavAct browser specific functionality
+
+```bash
+yarn dev
+```
+
 Transpile the code to a single html file and show it in the SavAct browser
+
+```bash
+yarn preview
+```
+
+Developing mode for instant code change **with** update SavAct browser specific functionality
 
 ```bash
 yarn show
