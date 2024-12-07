@@ -1,10 +1,10 @@
 # SavAct App
 
-The app for handling cryptocurrency transactions with fraud protection and visiting decentralised websites.
+The app for handling cryptocurrency transactions with fraud protection and visiting decentralized websites.
 
 ## Usage
 
-No instalation is needed. Just open `index.html` with a modern browser.
+No installation is needed. Just open `index.html` with a modern browser.
 
 ## Online version
 

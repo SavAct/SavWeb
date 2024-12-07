@@ -15,6 +15,7 @@
     "@types/html-minifier-terser": "^7.0.0",
     "@vitejs/plugin-vue": "^4.0.0",
     "eosjs": "^22.1.0",
+    "express": "^4.21.2",
     "quasar": "^2.11.7",
     "typescript": "^5.0.4",
     "vite": "^4.1.0",

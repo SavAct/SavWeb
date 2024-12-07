@@ -10,8 +10,8 @@ export declare interface NavigationHook {
   (to: RouteLocation, from?: RouteLocation): any;
 }
 
-let afterEachRouteChange: NavigationHook;
-let beforeEachRouteChange: NavigationHook;
+export let afterEachRouteChange: NavigationHook| null = null;
+export let beforeEachRouteChange: NavigationHook| null = null;
 
 /**
  * Simple route object that mimics some functions of Vue route
